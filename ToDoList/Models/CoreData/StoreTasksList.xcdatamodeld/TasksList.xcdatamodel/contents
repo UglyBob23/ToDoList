@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StoreTask" representedClassName="StoreTask" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isComplete" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <relationship name="tasksList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoreTasksList" inverseName="tasks" inverseEntity="StoreTasksList"/>
+    </entity>
+    <entity name="StoreTasksList" representedClassName="StoreTasksList" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="StoreTask" inverseName="tasksList" inverseEntity="StoreTask"/>
+    </entity>
+    <elements>
+        <element name="StoreTask" positionX="359.9718627929688" positionY="-125.51318359375" width="136.9564819335938" height="119"/>
+        <element name="StoreTasksList" positionX="120.1723022460938" positionY="-225.7138061523438" width="93.40087890625" height="89"/>
+    </elements>
+</model>
