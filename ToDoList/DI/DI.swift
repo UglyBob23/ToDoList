@@ -75,7 +75,7 @@ final class ModuleFactory: ModuleFactoryProtocol {
             action: #selector(tasksListsVC.addButtonTapped)
         )
         tasksListsVC.navigationItem.rightBarButtonItem = addButton
-        tasksListsVC.title = "Tasks Lists"
+        tasksListsVC.title = Localized.Titles.tasksListsVC
         return tasksListsVC
     }
     
@@ -106,7 +106,7 @@ final class ModuleFactory: ModuleFactoryProtocol {
         presenter.tasksList = tasksList
         editorViewController.presenter = presenter
         editorViewController.navigationItem.hidesBackButton = true
-        editorViewController.title = tasksList == nil ? "New Tasks List" : "Edit Tasks List"
+        editorViewController.title = tasksList == nil ? Localized.Titles.tasksListEditorVC : "Edit Tasks List"
         return editorViewController
     }
     
@@ -116,7 +116,7 @@ final class ModuleFactory: ModuleFactoryProtocol {
         presenter.task = task
         taskEditorViewController.presenter = presenter
         taskEditorViewController.navigationItem.hidesBackButton = true
-        taskEditorViewController.title = task == nil ? "New Task" : "Edit Task"
+        taskEditorViewController.title = task == nil ? Localized.Titles.taskEditorVC : "Edit Task"
         return taskEditorViewController
     }
 }

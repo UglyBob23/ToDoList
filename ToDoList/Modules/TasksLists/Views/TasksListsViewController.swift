@@ -28,7 +28,7 @@ final class TasksListViewController: UIViewController, TasksListsViewControllerP
     }()
     
     private lazy var segmentedControl: UISegmentedControl = {
-        let segmentedControl = UISegmentedControl(items: ["A-Z", "Date"])
+        let segmentedControl = UISegmentedControl(items: [Localized.SegmentedControl.alphabetItem, Localized.SegmentedControl.dateItem])
         segmentedControl.addTarget(self, action: #selector(updateUI), for: .valueChanged)
         segmentedControl.selectedSegmentIndex = 0
         return segmentedControl
@@ -36,9 +36,10 @@ final class TasksListViewController: UIViewController, TasksListsViewControllerP
     
     private let noTasksListsLabel: UILabel = {
         let label = UILabel()
-        label.text = "Press <<+>> to add list of tasks"
+        label.text = Localized.Labels.noTasksListsLabel
         label.textColor = .systemGray
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     

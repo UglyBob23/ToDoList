@@ -23,7 +23,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
         let textField = UITextField()
         textField.tag = 0
         textField.borderStyle = .roundedRect
-        textField.placeholder = "Task name"
+        textField.placeholder = Localized.Placeholders.taskName
         return textField
     }()
     
@@ -31,7 +31,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
         let textField = UITextField()
         textField.tag = 1
         textField.borderStyle = .roundedRect
-        textField.placeholder = "Task note"
+        textField.placeholder = Localized.Placeholders.taskNote
         return textField
     }()
     
@@ -39,7 +39,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
         let button = UIButton()
         button.backgroundColor = .systemGreen
         button.layer.cornerRadius = 10
-        button.setTitle("Save", for: .normal)
+        button.setTitle(Localized.Buttons.saveButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
         button.animate()
@@ -50,7 +50,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
         let button = UIButton()
         button.backgroundColor = .systemRed
         button.layer.cornerRadius = 10
-        button.setTitle("Cancel", for: .normal)
+        button.setTitle(Localized.Buttons.cancelButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
         button.animate()

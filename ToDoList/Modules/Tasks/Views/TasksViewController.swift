@@ -32,9 +32,10 @@ final class TasksViewController: UIViewController, TasksViewControllerProtocol {
     
     private let noTasksLabel: UILabel = {
         let label = UILabel()
-        label.text = "Tasks list is empty."
+        label.text = Localized.Labels.noTasksLabel
         label.textColor = .systemGray
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     

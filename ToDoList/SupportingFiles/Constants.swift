@@ -5,7 +5,6 @@
 //  Created by Владимир Паутов on 05.05.2022.
 //
 
-import Foundation
 import UIKit
 
 enum Padding {

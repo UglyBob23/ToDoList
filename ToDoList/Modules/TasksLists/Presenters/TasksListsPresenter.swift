@@ -58,8 +58,9 @@ final class TasksListsPresenter: TasksListsPresenterProtocol {
                 self?.tasksLists = tasksLists
                 self?.tasksListViewController?.updateUI()
             case .failure(let error):
-                self?.tasksListViewController?.showAlert(title: "Error!",
-                                                         message: error.description)
+                self?.tasksListViewController?.showAlert(
+                    title: Localized.AlertsTitles.error,
+                    message: error.description)
             }
         }
     }

@@ -46,9 +46,8 @@ final class TaskEditorPresenter: TaskEditorPresenterProtocol {
             !name.isEmpty
         else {
             editorViewController?.showAlert(
-                title: "Error!",
-                message: TaskError.taskNameIsEmpty.description
-            )
+                title: Localized.AlertsTitles.error,
+                message: TaskError.taskNameIsEmpty.description)
             return
         }
         

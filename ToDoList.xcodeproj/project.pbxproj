@@ -31,6 +31,8 @@
 		FB8934A927B3B73B0073E586 /* TasksListEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8934A827B3B73B0073E586 /* TasksListEditorViewController.swift */; };
 		FB8934AB27B3B7700073E586 /* TasksListEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8934AA27B3B7700073E586 /* TasksListEditorPresenter.swift */; };
 		FB8CA78B27FDBA9B00A90D5E /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8CA78A27FDBA9B00A90D5E /* DI.swift */; };
+		FB8EE089282989090093BA14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB8EE08B282989090093BA14 /* Localizable.strings */; };
+		FB8EE08E28298BAA0093BA14 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8EE08D28298BAA0093BA14 /* LocalizedStrings.swift */; };
 		FB9C3F9A27B7BAC300E5DCAA /* TaskEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9C3F9927B7BAC300E5DCAA /* TaskEditorPresenter.swift */; };
 		FB9C3F9C27B7BC7200E5DCAA /* TaskEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9C3F9B27B7BC7200E5DCAA /* TaskEditorViewController.swift */; };
 		FB9CD2CC2823145D003DED05 /* TasksAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9CD2CB2823145D003DED05 /* TasksAdapter.swift */; };
@@ -73,6 +75,10 @@
 		FB8934A827B3B73B0073E586 /* TasksListEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListEditorViewController.swift; sourceTree = "<group>"; };
 		FB8934AA27B3B7700073E586 /* TasksListEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListEditorPresenter.swift; sourceTree = "<group>"; };
 		FB8CA78A27FDBA9B00A90D5E /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		FB8EE086282988AA0093BA14 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FB8EE08A282989090093BA14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB8EE08C282989130093BA14 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB8EE08D28298BAA0093BA14 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		FB9C3F9927B7BAC300E5DCAA /* TaskEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditorPresenter.swift; sourceTree = "<group>"; };
 		FB9C3F9B27B7BC7200E5DCAA /* TaskEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditorViewController.swift; sourceTree = "<group>"; };
 		FB9CD2CB2823145D003DED05 /* TasksAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksAdapter.swift; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 			children = (
 				FBDC7CF9281FE43900FB5E74 /* Application */,
 				FB25AD942825675100E0E9AE /* Extensions */,
+				FBAD7AF1282A386300110513 /* Localizations */,
 				FB23F9E82823A8FF008D83BA /* Constants.swift */,
 				FB74C29B27ABE82300064DB9 /* ErrorManager.swift */,
 				FBBD87B6281A9FAC008C3DBA /* TypeAliases.swift */,
@@ -329,6 +336,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FBAD7AF1282A386300110513 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				FB8EE08D28298BAA0093BA14 /* LocalizedStrings.swift */,
+				FB8EE08B282989090093BA14 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
 		FBD5936F27AA8BAD00C5D8B7 /* TasksLists */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +442,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = FB16A69A27AA782A002BDB48;
 			productRefGroup = FB16A6A427AA782A002BDB48 /* Products */;
@@ -443,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB16A6B327AA782D002BDB48 /* LaunchScreen.storyboard in Resources */,
+				FB8EE089282989090093BA14 /* Localizable.strings in Resources */,
 				FB07E66A28293EA700A14821 /* .gitignore in Resources */,
 				FB16A6B027AA782D002BDB48 /* Assets.xcassets in Resources */,
 			);
@@ -459,6 +477,7 @@
 				FB5D006127B1292200FEF87D /* StoreTask+CoreDataProperties.swift in Sources */,
 				FB7DE31C27DC94C400875753 /* Coordinator.swift in Sources */,
 				FB9C3F9C27B7BC7200E5DCAA /* TaskEditorViewController.swift in Sources */,
+				FB8EE08E28298BAA0093BA14 /* LocalizedStrings.swift in Sources */,
 				FB5D006027B1292200FEF87D /* StoreTask+CoreDataClass.swift in Sources */,
 				FB7DE31E27DC959C00875753 /* TaskEditorCoordinator.swift in Sources */,
 				FBC1468727AE819400ABC07A /* StoreTasksList.xcdatamodeld in Sources */,
@@ -499,8 +518,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				FB16A6B227AA782D002BDB48 /* Base */,
+				FB8EE086282988AA0093BA14 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB8EE08B282989090093BA14 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB8EE08A282989090093BA14 /* en */,
+				FB8EE08C282989130093BA14 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -510,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -571,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

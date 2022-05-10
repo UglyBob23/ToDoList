@@ -13,7 +13,7 @@ enum DataError: Error {
     var description: String {
         switch self {
         case .getData:
-            return "Can't get data"
+            return Localized.Errors.Data.getData
         }
     }
 }
@@ -24,7 +24,7 @@ enum TaskError {
     var description: String {
         switch self {
         case .taskNameIsEmpty:
-            return "Task name can't be empty"
+            return Localized.Errors.Task.taskNameIsEmpty
         }
     }
 }
@@ -35,7 +35,7 @@ enum TasksListError {
     var description: String {
         switch self {
         case .tasksListNameIsEmpty:
-            return "Tasks list name can't be empty"
+            return Localized.Errors.TasksList.tasksListNameIsEmpty
         }
     }
 }

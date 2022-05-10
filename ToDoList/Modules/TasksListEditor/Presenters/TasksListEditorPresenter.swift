@@ -43,13 +43,13 @@ final class TasksListEditorPresenter: TasksListEditorPresenerProtocol {
     func saveTasksList(with name: String?) {
         guard
             let name = name,
-            !name.isEmpty else {
-                editorViewController?.showAlert(
-                    title: "Error!",
-                    message: TasksListError.tasksListNameIsEmpty.description
-                )
-                return
-            }
+            !name.isEmpty
+        else {
+            editorViewController?.showAlert(
+                title: Localized.AlertsTitles.error,
+                message: TasksListError.tasksListNameIsEmpty.description)
+            return
+        }
         
         if let tasksList = tasksList {
             tasksList.name = name

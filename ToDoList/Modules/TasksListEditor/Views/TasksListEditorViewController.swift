@@ -22,7 +22,7 @@ final class TasksListEditorViewController: UIViewController,  TasksListEditorVie
     private let taskNameTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
-        textField.placeholder = "Tasks List name"
+        textField.placeholder = Localized.Placeholders.tasksListName
         return textField
     }()
     
@@ -30,7 +30,7 @@ final class TasksListEditorViewController: UIViewController,  TasksListEditorVie
         let button = UIButton()
         button.backgroundColor = .systemGreen
         button.layer.cornerRadius = 10
-        button.setTitle("Save", for: .normal)
+        button.setTitle(Localized.Buttons.saveButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
         button.animate()
@@ -41,7 +41,7 @@ final class TasksListEditorViewController: UIViewController,  TasksListEditorVie
         let button = UIButton()
         button.backgroundColor = .systemRed
         button.layer.cornerRadius = 10
-        button.setTitle("Cancel", for: .normal)
+        button.setTitle(Localized.Buttons.cancelButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
         button.animate()

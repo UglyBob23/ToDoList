@@ -26,7 +26,7 @@ final class TasksAdapter: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        section == 0 ? "Current Tasks" : "Completed Tasks"
+        section == 0 ? Localized.TableView.Sections.currentTasks : Localized.TableView.Sections.completedTasks
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,7 +66,7 @@ final class TasksAdapter: NSObject, UITableViewDataSource, UITableViewDelegate {
     // MARK: - Make UIContextualActions methods
     
     private func makeDeleteContextualAction(for tableView: UITableView, at indexPath: IndexPath) -> UIContextualAction {
-        let deleteAction = UIContextualAction(style: .normal, title: "Delete") { [weak self, weak tableView] _, _, _ in
+        let deleteAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.delete) { [weak self, weak tableView] _, _, _ in
             self?.presenter?.deleteTask(at: indexPath)
             tableView?.deleteRows(at: [indexPath], with: .automatic)
             self?.presenter?.setTableViewAppearance()
@@ -76,7 +76,7 @@ final class TasksAdapter: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
     
     private func makeEditContextualAction(at indexPath: IndexPath) -> UIContextualAction {
-        let editAction = UIContextualAction(style: .normal, title: "Edit") { [weak self] _, _, _ in
+        let editAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.edit) { [weak self] _, _, _ in
             self?.presenter?.editTask(at: indexPath)
         }
         editAction.backgroundColor = .systemBlue
@@ -84,7 +84,7 @@ final class TasksAdapter: NSObject, UITableViewDataSource, UITableViewDelegate {
     }
     
     private func makeDoneContextualAction(at indexPath: IndexPath) -> UIContextualAction {
-        let doneAction = UIContextualAction(style: .normal, title: "Done") { [weak self] _, _, _ in
+        let doneAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.done) { [weak self] _, _, _ in
             self?.presenter?.setTaskDone(at: indexPath)
         }
         doneAction.backgroundColor = .systemGreen
