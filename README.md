@@ -2,7 +2,7 @@
 
 Небольшое приложение, позволяющее создавать, хранить, редактировать и удалять To-Do списки. Также реализована возможность отмечать списки и задачи, как выполненные.
 
-## В данном проекте были использованы :
+### В данном проекте были использованы :
 
 - Архитектура MVP
 - Реализован DI
@@ -14,7 +14,7 @@
 - адаптировано под Dark mode
 - мультиязыковая поддержка(ru/en)
 
-## Приложение cостоит из 4 экранов :
+### Приложение cостоит из 4 экранов :
 - ToDo списки
 - Задачи для выбранного ToDo листа:
 - Редактор ToDo листа
@@ -28,10 +28,26 @@
 </p>
 <br />
 
-## При помощи UIContextualActions можно удалять/редактировать списки и задачи:
+### При помощи UIContextualActions можно удалять/редактировать списки и задачи:
 <br />
 <p float="left">
 <img src="https://user-images.githubusercontent.com/57682789/168011517-d5d0e59d-a98b-40f9-95be-b9857c3a0581.png" width="240" height="480">
 <img src="https://user-images.githubusercontent.com/57682789/168011501-966f35b6-7052-41f0-bf3f-99f06bb86a37.png" width="240" height="480">
+</p>
+<br />
+
+### Реализована мультиязыковая поддержка:
+<br />
+<p float="left">
+<img src="https://user-images.githubusercontent.com/57682789/168064867-4512793f-dee4-4c3c-b2b1-439a2fe35d23.png" width="240" height="480">
+<img src="https://user-images.githubusercontent.com/57682789/168064885-6c953d08-adcb-4b34-b577-aedfefeab0c7.png" width="240" height="480">
+</p>
+<br />
+
+### Приложение адаптировано под Dark mode:
+<br />
+<p float="left">
+<img src="https://user-images.githubusercontent.com/57682789/168066035-a03761f4-4c4f-4837-913c-6e3b41dcedc3.png" width="240" height="480">
+<img src="https://user-images.githubusercontent.com/57682789/168066046-60e801cc-5f8a-46eb-b744-a21232cd38c5.png" width="240" height="480">
 </p>
 <br />
