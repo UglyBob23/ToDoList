@@ -11,9 +11,10 @@
 - UIKit(верстка кодом)
 - CoreData для хранения списков
 - Анимации посредством UIView.Animate
+- принципы SOLID 
 
 ### Приложение cостоит из 4 экранов :
-- ToDo списки
+- To-Do списки
 - Задачи для выбранного ToDo листа:
 - Редактор ToDo листа
 - Редактор задачи
@@ -21,6 +22,8 @@
 <p float="left">
 <img src="https://user-images.githubusercontent.com/57682789/168006987-b04b1a12-48c2-4d43-acd6-08c435a8fd64.png" width="240" height="480">
 <img src="https://user-images.githubusercontent.com/57682789/168011464-496d3c9f-5c92-4619-bcc3-bdda1af60692.png" width="240" height="480">
+</p>
+<p float="left">
 <img src="https://user-images.githubusercontent.com/57682789/168011473-5ffec118-c844-423d-9354-4d90bb7f4566.png" width="240" height="480">
 <img src="https://user-images.githubusercontent.com/57682789/168011512-c356e0af-92b8-498a-9e3f-238ac58688d3.png" width="240" height="480">
 </p>
