@@ -23,7 +23,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
         let textField = UITextField()
         textField.tag = 0
         textField.borderStyle = .roundedRect
-        textField.backgroundColor = UIColor(named: "textField")
+        textField.backgroundColor = Colors.TextFields.background
         textField.placeholder = Localized.Placeholders.taskName
         return textField
     }()
@@ -32,14 +32,14 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
         let textField = UITextField()
         textField.tag = 1
         textField.borderStyle = .roundedRect
-        textField.backgroundColor = UIColor(named: "textField")
+        textField.backgroundColor = Colors.TextFields.background
         textField.placeholder = Localized.Placeholders.taskNote
         return textField
     }()
     
     private lazy var saveButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor(named: "buttonGreen")
+        button.backgroundColor = Colors.Buttons.green
         button.layer.cornerRadius = 10
         button.setTitle(Localized.Buttons.saveButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -50,7 +50,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
     
     private lazy var cancelButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor(named: "buttonRed")
+        button.backgroundColor = Colors.Buttons.red
         button.layer.cornerRadius = 10
         button.setTitle(Localized.Buttons.cancelButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -95,7 +95,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
     }
     
     private func configureViewController() {
-        view.backgroundColor = UIColor(named: "background")
+        view.backgroundColor = Colors.Views.background
     }
     
     private func configureTaskNameTextField() {

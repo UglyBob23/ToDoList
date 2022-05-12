@@ -18,6 +18,7 @@
 		FB23F9E92823A8FF008D83BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB23F9E82823A8FF008D83BA /* Constants.swift */; };
 		FB25AD962825679800E0E9AE /* UIButton+animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB25AD952825679800E0E9AE /* UIButton+animate.swift */; };
 		FB47168C27EC43300042CA37 /* AlertDisplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB47168B27EC43300042CA37 /* AlertDisplayer.swift */; };
+		FB58A4C4282D111800A7327F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB58A4C3282D111800A7327F /* Colors.swift */; };
 		FB5D005E27B1292200FEF87D /* StoreTasksList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D005A27B1292200FEF87D /* StoreTasksList+CoreDataClass.swift */; };
 		FB5D005F27B1292200FEF87D /* StoreTasksList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D005B27B1292200FEF87D /* StoreTasksList+CoreDataProperties.swift */; };
 		FB5D006027B1292200FEF87D /* StoreTask+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5D005C27B1292200FEF87D /* StoreTask+CoreDataClass.swift */; };
@@ -62,6 +63,7 @@
 		FB23F9E82823A8FF008D83BA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB25AD952825679800E0E9AE /* UIButton+animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+animate.swift"; sourceTree = "<group>"; };
 		FB47168B27EC43300042CA37 /* AlertDisplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplayer.swift; sourceTree = "<group>"; };
+		FB58A4C3282D111800A7327F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FB5D005A27B1292200FEF87D /* StoreTasksList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreTasksList+CoreDataClass.swift"; sourceTree = "<group>"; };
 		FB5D005B27B1292200FEF87D /* StoreTasksList+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreTasksList+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FB5D005C27B1292200FEF87D /* StoreTask+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreTask+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				FBDC7CF9281FE43900FB5E74 /* Application */,
 				FB25AD942825675100E0E9AE /* Extensions */,
 				FBAD7AF1282A386300110513 /* Localizations */,
+				FB58A4C3282D111800A7327F /* Colors.swift */,
 				FB23F9E82823A8FF008D83BA /* Constants.swift */,
 				FB74C29B27ABE82300064DB9 /* ErrorManager.swift */,
 				FBBD87B6281A9FAC008C3DBA /* TypeAliases.swift */,
@@ -474,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB9C3F9A27B7BAC300E5DCAA /* TaskEditorPresenter.swift in Sources */,
+				FB58A4C4282D111800A7327F /* Colors.swift in Sources */,
 				FB5D006127B1292200FEF87D /* StoreTask+CoreDataProperties.swift in Sources */,
 				FB7DE31C27DC94C400875753 /* Coordinator.swift in Sources */,
 				FB9C3F9C27B7BC7200E5DCAA /* TaskEditorViewController.swift in Sources */,

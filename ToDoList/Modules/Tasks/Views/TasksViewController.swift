@@ -24,7 +24,7 @@ final class TasksViewController: UIViewController, TasksViewControllerProtocol {
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.alpha = 0
-        tableView.backgroundColor = UIColor(named: "background")
+        tableView.backgroundColor = Colors.Views.background
         tableView.allowsSelection = false
         tableView.register(
             TasksTableViewCell.self,
@@ -60,7 +60,7 @@ final class TasksViewController: UIViewController, TasksViewControllerProtocol {
     // MARK: - Private methods
     
     private func configureViewController() {
-        view.backgroundColor = UIColor(named: "background")
+        view.backgroundColor = Colors.Views.background
     }
     
     func setTableViewAppearance(tasksIsEmpty: Bool) {
