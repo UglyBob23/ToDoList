@@ -29,7 +29,7 @@ final class TasksListEditorViewController: UIViewController,  TasksListEditorVie
     
     private lazy var saveButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor(named: "swipeDone")
+        button.backgroundColor = UIColor(named: "buttonGreen")
         button.layer.cornerRadius = 10
         button.setTitle(Localized.Buttons.saveButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -40,7 +40,7 @@ final class TasksListEditorViewController: UIViewController,  TasksListEditorVie
     
     private lazy var cancelButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor(named: "swipeDelete")
+        button.backgroundColor = UIColor(named: "buttonRed")
         button.layer.cornerRadius = 10
         button.setTitle(Localized.Buttons.cancelButton, for: .normal)
         button.setTitleColor(.white, for: .normal)

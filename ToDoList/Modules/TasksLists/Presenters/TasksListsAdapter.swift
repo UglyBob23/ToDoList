@@ -63,7 +63,7 @@ final class TasksListsAdapter: NSObject, UITableViewDataSource, UITableViewDeleg
             tableView?.deleteRows(at: [indexPath], with: .automatic)
             self?.presenter?.setTableViewAppearance()
         }
-        deleteAction.backgroundColor = UIColor(named: "swipeDelete")
+        deleteAction.backgroundColor = UIColor(named: "buttonRed")
         return deleteAction
     }
     
@@ -73,7 +73,7 @@ final class TasksListsAdapter: NSObject, UITableViewDataSource, UITableViewDeleg
                 self?.presenter?.editTasksList?(tasksList)
             }
         }
-        editAction.backgroundColor = UIColor(named: "swipeEdit")
+        editAction.backgroundColor = UIColor(named: "buttonBlue")
         return editAction
     }
     
@@ -81,7 +81,7 @@ final class TasksListsAdapter: NSObject, UITableViewDataSource, UITableViewDeleg
         let doneAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.done) { [weak self] _, _, _ in
             self?.presenter?.setTasksListDone(at: indexPath.row)
         }
-        doneAction.backgroundColor = UIColor(named: "swipeDone")
+        doneAction.backgroundColor = UIColor(named: "buttonGreen")
         return doneAction
     }
 }
