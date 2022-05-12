@@ -71,7 +71,7 @@ final class TasksAdapter: NSObject, UITableViewDataSource, UITableViewDelegate {
             tableView?.deleteRows(at: [indexPath], with: .automatic)
             self?.presenter?.setTableViewAppearance()
         }
-        deleteAction.backgroundColor = .systemRed
+        deleteAction.backgroundColor = UIColor(named: "swipeDelete")
         return deleteAction
     }
     
@@ -79,7 +79,7 @@ final class TasksAdapter: NSObject, UITableViewDataSource, UITableViewDelegate {
         let editAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.edit) { [weak self] _, _, _ in
             self?.presenter?.editTask(at: indexPath)
         }
-        editAction.backgroundColor = .systemBlue
+        editAction.backgroundColor = UIColor(named: "swipeEdit")
         return editAction
     }
     
@@ -87,7 +87,7 @@ final class TasksAdapter: NSObject, UITableViewDataSource, UITableViewDelegate {
         let doneAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.done) { [weak self] _, _, _ in
             self?.presenter?.setTaskDone(at: indexPath)
         }
-        doneAction.backgroundColor = .systemGreen
+        doneAction.backgroundColor = UIColor(named: "swipeDone")
         return doneAction
     }
 }

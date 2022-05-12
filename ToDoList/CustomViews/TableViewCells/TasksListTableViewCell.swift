@@ -80,7 +80,8 @@ final class TasksListTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        self.selectionStyle = .none
+        selectionStyle = .none
+        backgroundColor = UIColor(named: "background")
         
         layoutTitleLabel()
         layoutDetailLabel()

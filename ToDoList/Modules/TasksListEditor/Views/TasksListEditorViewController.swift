@@ -22,13 +22,14 @@ final class TasksListEditorViewController: UIViewController,  TasksListEditorVie
     private let taskNameTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .roundedRect
+        textField.backgroundColor = UIColor(named: "textField")
         textField.placeholder = Localized.Placeholders.tasksListName
         return textField
     }()
     
     private lazy var saveButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .systemGreen
+        button.backgroundColor = UIColor(named: "swipeDone")
         button.layer.cornerRadius = 10
         button.setTitle(Localized.Buttons.saveButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -39,7 +40,7 @@ final class TasksListEditorViewController: UIViewController,  TasksListEditorVie
     
     private lazy var cancelButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .systemRed
+        button.backgroundColor = UIColor(named: "swipeDelete")
         button.layer.cornerRadius = 10
         button.setTitle(Localized.Buttons.cancelButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -73,7 +74,7 @@ final class TasksListEditorViewController: UIViewController,  TasksListEditorVie
     
     private func configureViewController() {
         addHideKeyboardGesture()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "background")
     }
     
     private func configureTaskNameTextField() {

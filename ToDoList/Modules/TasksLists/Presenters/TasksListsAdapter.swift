@@ -58,30 +58,30 @@ final class TasksListsAdapter: NSObject, UITableViewDataSource, UITableViewDeleg
     // MARK: - Make UIContextualActions methods
     
     private func makeDeleteContextualAction(for tableView: UITableView, at indexPath: IndexPath) -> UIContextualAction {
-        let deleteAction = UIContextualAction(style: .normal, title: "Delete") { [weak self, weak tableView] _, _, _ in
+        let deleteAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.delete) { [weak self, weak tableView] _, _, _ in
             self?.presenter?.deleteTasksList(at: indexPath.row)
             tableView?.deleteRows(at: [indexPath], with: .automatic)
             self?.presenter?.setTableViewAppearance()
         }
-        deleteAction.backgroundColor = .systemRed
+        deleteAction.backgroundColor = UIColor(named: "swipeDelete")
         return deleteAction
     }
     
     private func makeEditContextualAction(at indexPath: IndexPath) -> UIContextualAction {
-        let editAction = UIContextualAction(style: .normal, title: "Edit") { [weak self] _, _, _ in
+        let editAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.edit) { [weak self] _, _, _ in
             if let tasksList = self?.presenter?.tasksLists[indexPath.row] {
                 self?.presenter?.editTasksList?(tasksList)
             }
         }
-        editAction.backgroundColor = .systemBlue
+        editAction.backgroundColor = UIColor(named: "swipeEdit")
         return editAction
     }
     
     private func makeDoneContextualAction(at indexPath: IndexPath) -> UIContextualAction {
-        let doneAction = UIContextualAction(style: .normal, title: "Done") { [weak self] _, _, _ in
+        let doneAction = UIContextualAction(style: .normal, title: Localized.SwipeActions.done) { [weak self] _, _, _ in
             self?.presenter?.setTasksListDone(at: indexPath.row)
         }
-        doneAction.backgroundColor = .systemGreen
+        doneAction.backgroundColor = UIColor(named: "swipeDone")
         return doneAction
     }
 }

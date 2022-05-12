@@ -22,6 +22,7 @@ final class TasksListViewController: UIViewController, TasksListsViewControllerP
     
     private let tableView: UITableView = {
         let tableView = UITableView()
+        tableView.backgroundColor = UIColor(named: "background")
         tableView.register(TasksListTableViewCell.self,
                            forCellReuseIdentifier: TasksListTableViewCell.reuseID)
         return tableView
@@ -77,7 +78,7 @@ final class TasksListViewController: UIViewController, TasksListsViewControllerP
     }
     
     private func configureViewController() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "background")
     }
     
     private func configureTableView() {

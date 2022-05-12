@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let rootVC = UINavigationController()
         rootVC.navigationBar.prefersLargeTitles = true
+        rootVC.navigationBar.tintColor = .systemGray
         window?.rootViewController = rootVC
         coordinator = di.makeAppCoordinator(navigationController: rootVC)
         coordinator?.start()

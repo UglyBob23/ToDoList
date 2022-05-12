@@ -23,6 +23,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
         let textField = UITextField()
         textField.tag = 0
         textField.borderStyle = .roundedRect
+        textField.backgroundColor = UIColor(named: "textField")
         textField.placeholder = Localized.Placeholders.taskName
         return textField
     }()
@@ -31,13 +32,14 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
         let textField = UITextField()
         textField.tag = 1
         textField.borderStyle = .roundedRect
+        textField.backgroundColor = UIColor(named: "textField")
         textField.placeholder = Localized.Placeholders.taskNote
         return textField
     }()
     
     private lazy var saveButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .systemGreen
+        button.backgroundColor = UIColor(named: "swipeDone")
         button.layer.cornerRadius = 10
         button.setTitle(Localized.Buttons.saveButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -48,7 +50,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
     
     private lazy var cancelButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .systemRed
+        button.backgroundColor = UIColor(named: "swipeDelete")
         button.layer.cornerRadius = 10
         button.setTitle(Localized.Buttons.cancelButton, for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -93,7 +95,7 @@ final class TaskEditorViewController: UIViewController, TaskEditorViewController
     }
     
     private func configureViewController() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(named: "background")
     }
     
     private func configureTaskNameTextField() {

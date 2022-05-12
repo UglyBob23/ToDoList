@@ -68,6 +68,8 @@ final class TasksTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
+        backgroundColor = UIColor(named: "background")
+        
         layoutTitleLabel()
         layoutDetailLabel()
     }
